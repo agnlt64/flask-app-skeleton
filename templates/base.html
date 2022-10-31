@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <head>
+        <nav class="nav">
+            <a>Element 1</a>
+            <a>Element 2</a>
+            <a>Element 3</a>
+            <a>Element 4</a>
+        </nav>
+    </head>
+
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

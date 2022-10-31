@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Basic colors */
+:root
+{
+    --blue: #007bff;
+    --blue-hover: #0b5ed7;
+
+    --cyan: #0dcaf0;
+    --cyan-hover: #07b1d2;
+
+    --purple: #712cf9;
+    --purple-hover: #6528e0;
+
+    --green: #198754;;
+    --green-hover: #157347;
+
+    --red: #dc3545;
+    --red-hover: #bb2d3b;
+
+    --yellow: #fcc626;
+    --yellow-hover: #edb202;
+
+    --dark: #27292a;
+    --dark-hover: #141619;
+
+    --link: #1c87fa;
+    --link-hover: #197ce5;
+
+    --input-width: 15em;
+
+    --grey-neutral-300: rgb(100, 100, 100);
+    --grey-neutral-600: rgb(65, 65, 65);
+}
+
+/* Basic reset and default config */
+*
+{
+    background-color: var(--grey-neutral-600);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--link);
+
+}
+
+a:hover
+{
+    cursor: pointer;
+    color: var(--link-hover);
+}
+
+/* Container styling */
+.container
+{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+/* General navbar styling */
+.nav
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--grey-neutral-300);
+    padding: 25px;
+}
+
+.nav a
+{
+    background-color: var(--grey-neutral-300);
+}
+
+/* Input basic styling */
+
+.input-field
+{
+    border: none;
+    background-color: white;
+    color: var(--grey-neutral-600);
+    width: var(--input-width);
+    border-radius: 5px;
+    padding: 12px 12px;
+    font-size: 15px;
+}
+
+.input-field:focus,
+.input-field:focus-visible,
+.input-field:focus-within
+{
+    outline: none;
+}
+
+/* Button generic styling */
+.btn
+{
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.btn:active
+{
+    transform: scale(0.95);
+}
+
+/* Buttons colors */
+.btn-yellow
+{
+    background-color: var(--yellow);
+}
+
+.btn-yellow:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--yellow-hover);
+}
+
+.btn-red
+{
+    background-color: var(--red);
+}
+
+.btn-dark
+{
+    background-color: var(--dark);
+}
+
+.btn-dark:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--dark-hover);
+}
+
+.btn-red:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--red-hover);
+}
+
+.btn-blue
+{
+    background-color: var(--blue);
+}
+
+.btn-blue:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--blue-hover);
+}
+
+.btn-purple
+{
+    background-color: var(--purple);
+}
+
+.btn-purple:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--purple-hover);
+}
+
+.btn-green
+{
+    background-color: var(--green);
+}
+
+.btn-green:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--green-hover);
+}
+
+.btn-cyan
+{
+    background-color: var(--cyan);
+}
+
+.btn-cyan:hover
+{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--cyan-hover);
+}
+
+/* Form styling */
+.form-control
+{
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
