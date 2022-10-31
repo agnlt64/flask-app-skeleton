@@ -107,7 +107,7 @@ a:hover
     border: none;
     padding: 10px 15px;
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 0.4em;
     transition: 0.3s;
     color: #fff;
 }
